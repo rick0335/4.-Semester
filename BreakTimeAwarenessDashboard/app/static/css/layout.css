@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    background-color: #191927;
+}
+
+.wrapper{
+    display: flex;
+    position: relative;
+}
+
+/* SIDEBAR STYLING */
+.wrapper .sidebar{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: #191927;
+    padding: 30px 0;
+    border-right: 1px solid #393e46;
+    border-bottom: 1px solid #393e46;
+}
+
+.wrapper .sidebar h5{
+    color: #d6d8e1;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.wrapper .sidebar h5 .fas {
+    padding-right: 5px;
+}
+
+.wrapper .sidebar ul li{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    border-bottom: 1px solid #393e46;
+    border-top: 1px solid #393e46;
+}
+
+.wrapper .sidebar ul li a{
+    color: #A6ABBD;
+    display: block;
+    font-size: 18px;
+}
+
+.wrapper .sidebar ul li a .fas{
+    padding-right: 15px;
+}
+
+.wrapper .sidebar ul li:hover{
+    background: #393e46;
+}
+
+.wrapper .sidebar ul li:hover a{
+    color: #d6d8e1;
+}
+
+
+/* MAIN CONTENT STYLING */
+.wrapper .main-content{
+    width: 100%;
+    height: 100%;
+    margin-left: 200px;
+}
+
+.wrapper .main-content .header {
+    background: #232931;
+    padding: 20px;
+    color: #717171;                                                                                                         
+    border-bottom: 1px solid #e0e4e8;
+}
