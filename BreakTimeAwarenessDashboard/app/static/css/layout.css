@@ -22,12 +22,12 @@ body{
 /* SIDEBAR STYLING */
 .wrapper .sidebar{
     position: fixed;
-    width: 300px;
+    width: 250px;
     height: 100%;
     background: #191927;
     padding: 30px 0;
-    border-right: 1px solid #393e46;
-    border-bottom: 1px solid #393e46;
+    border-right: 1px solid #282838;
+    border-bottom: 1px solid #282838;
 }
 
 .wrapper .sidebar h5{
@@ -45,8 +45,8 @@ body{
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 20px;
-    border-bottom: 1px solid #393e46;
-    border-top: 1px solid #393e46;
+    border-bottom: 1px solid #282838;
+    border-top: 1px solid #282838;
 }
 
 .wrapper .sidebar ul li a{
@@ -73,8 +73,8 @@ body{
     bottom: 0;
     width: 300px;
     color: #d6d8e1;
-    border-bottom: 1px solid #393e46;
-    border-top: 1px solid #393e46;
+    border-bottom: 1px solid #282838;
+    border-top: 1px solid #282838;
 }
 
 
