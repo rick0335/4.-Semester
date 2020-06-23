@@ -1,0 +1,50 @@
+{% extends "layouts/layout.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/users.css') }}">
+
+    <!--Plotly-->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+
+    <style>
+        .container {
+            margin-top: 50px;
+        }
+        h1 {
+            color: #d6d8e1;
+        }
+    </style>
+
+{% endblock %}
+
+{% block main_content_header %} Student {% endblock %}
+
+{% block content %}
+
+<div class="container text-center">
+    <h1>Student - Index</h1>
+
+    <div class="row justify-center">
+        <div id="div-students-over-time"></div>
+    </div>
+    <div class="row mt-4">
+        <div id="div-students-male-female"></div>
+    </div>
+
+
+    <script>
+        var graphs = {{graphs | safe}};
+        var students_over_time_graph = graphs["students_over_time_graph"];
+        Plotly.plot("div-students-over-time", JSON.parse(students_over_time_graph));
+        var students_male_female_graph = graphs["students_male_female_graph"];
+        Plotly.plot("div-students-male-female", JSON.parse(students_male_female_graph));
+    </script>
+</div>
+
+
+    
+{% endblock %}

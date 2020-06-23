@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    {% include "layouts/includes/head_links.html" %}
+
+</head>
+<body style="background-color: #191927;">
+    <div class="row" style="margin-top: 400px; margin-left: 100px;">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <form method="POST">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Username</span>
+                    </div>
+                    <input type="text" class="form-control" name="username" placeholder="Enter username" required>
+                </div>
+
+                <div class="input-group mt-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Password</span>
+                    </div>
+                    <input type="password" class="form-control" name="password" placeholder="Enter password" required>
+                </div>
+
+                <div class="input-group mt-2">
+                    <input type="submit" class="form-control btn btn-dark" name="submit" value="Register">
+                </div>
+            </form>
+
+            <a href="/Authenticate/Login" class="btn btn-dark mt-2 w-100">Already registered? Sign in now</a>
+
+            {% include "layouts/includes/error-alert.html" %}
+
+        </div>
+        <div class="col-4"></div>
+    </div>
+</body>
+</html>
